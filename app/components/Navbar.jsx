@@ -120,7 +120,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             <a href="#about">About me</a>
           </li>
           <li>
-            <a href="#education">Services</a>
+            <a href="#education">Education</a>
           </li>
           <li>
             <a href="#work">My Work</a>
