@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome to my portfolio! Here, you'll find my latest projects, skills, and ways to connect with me. I'm passionate about building scalable and efficient web applications that solve real-world problems.
 
-## Getting Started
+🌟 About Me
 
-First, run the development server:
+I'm a Full Stack Web Developer based in India, specializing in:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Frontend: React, Next.js, Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Backend: Node.js, Express
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Database: MongoDB, SQL
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Other Skills: API Development, Git & GitHub
 
-## Learn More
+📌 Features of My Portfolio
 
-To learn more about Next.js, take a look at the following resources:
+Showcases my latest web development projects
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Highlights my technical skills and experience
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Includes a contact section for collaboration
 
-## Deploy on Vercel
+Clean and responsive design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔗 Live Portfolio
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out my portfolio here: [Your Portfolio URL]
