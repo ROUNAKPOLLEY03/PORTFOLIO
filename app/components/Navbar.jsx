@@ -48,10 +48,10 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         </a>
 
         <ul
-          className={`font-ovo hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
+          className={`font-ovo hidden md:flex  items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
             isScroll
               ? ""
-              : "bg-white shadow-sm opacity-90 dark:border dark:border-white/50 dark:bg-transparent"
+              : "bg-white hidden shadow-sm opacity-90 dark:border dark:border-white/50 dark:bg-transparent"
           } `}
         >
           <li>
@@ -103,7 +103,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         {/* mobile menu */}
         <ul
           ref={sideMenu}
-          className="font-ovo md:hidden flex flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-[var(--darkHover)] dark:text-white"
+          className="font-ovo md:hidden flex flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-200 h-screen bg-rose-50 transition duration-500 dark:bg-[var(--darkHover)] dark:text-white"
         >
           <div className="absolute right-6 top-6">
             <Image
