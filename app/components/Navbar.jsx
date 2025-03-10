@@ -41,7 +41,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         } w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50`}
       >
         <a href="#top">
-          <h2 className="cursor-pointer text-4xl font-light inline-block">
+          <h2 className="cursor-pointer text-4xl font-light inline-block overflow-y-hidden">
             Rounak
           </h2>
           <span className="inline-block w-2 h-2 bg-red-500 rounded-full ml-1"></span>

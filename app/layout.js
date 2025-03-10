@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${outfit.variable} ${ovo.variable} scroll-smooth`}
     >
-      <body className="font-outfit antialiased leading-8 overflow-x-hidden dark:bg-[var(--darkTheme)] dark:text-white">
+      <body className="font-outfit antialiased leading-8 dark:bg-[var(--darkTheme)] dark:text-white">
         {children}
       </body>
     </html>

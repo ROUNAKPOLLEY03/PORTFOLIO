@@ -11,6 +11,11 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+*{
+  /* box-sizing: border-box; */
+  overflow-x:hidden;
+}
+
 .font-outfit {
   font-family: var(--font-outfit), sans-serif;
 }

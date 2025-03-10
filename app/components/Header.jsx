@@ -51,7 +51,7 @@ const Header = ({ isDarkMode }) => {
       </motion.h3>
 
       <motion.h1
-        className="text-3xl sm:text-6xl lg:text-[66px] font-ovo"
+        className="text-3xl sm:text-6xl lg:text-[66px] font-ovo  overflow-y-hidden"
         variants={fadeIn("left", 0.4)}
       >
         Full Stack Web Developer in India.

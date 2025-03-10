@@ -34,7 +34,7 @@ const Work = () => {
       >
         My Portfolio
       </motion.h4>
-      <motion.h2 className="text-center text-5xl font-ovo" variants={fadeInUp}>
+      <motion.h2 className=" overflow-y-hidden text-center text-5xl font-ovo" variants={fadeInUp}>
         My Latest Work
       </motion.h2>
       <motion.p
@@ -47,7 +47,7 @@ const Work = () => {
 
       {/* Project Cards */}
       <motion.div
-        className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] my-10 gap-6 dark:text-black"
+        className=" overflow-y-hidden grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] my-10 gap-6 dark:text-black"
         variants={staggerContainer}
       >
         {workData.map((project, index) => (

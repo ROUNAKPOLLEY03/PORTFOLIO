@@ -19,7 +19,7 @@ const About = ({ isDarkMode }) => {
   return (
     <motion.div
       id="about"
-      className="w-full px-[12%] py-10 scroll-mt-20"
+      className="px-[12%] py-10 scroll-mt-20 "
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.2 }} // 👈 Ensures animation triggers every time
@@ -32,7 +32,10 @@ const About = ({ isDarkMode }) => {
       >
         Introduction
       </motion.h4>
-      <motion.h2 className="text-center text-5xl font-ovo" variants={fadeInUp}>
+      <motion.h2
+        className="text-center text-5xl font-ovo  overflow-y-hidden"
+        variants={fadeInUp}
+      >
         About Me
       </motion.h2>
 
@@ -65,24 +68,24 @@ const About = ({ isDarkMode }) => {
 
           {/* Info Cards */}
           <motion.ul
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
+            className=" overflow-y-hidden grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
             variants={staggerContainer}
           >
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <motion.li
                 key={index}
-                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[var(--lightHover)] hover:-translate-y-1 duration-500 hover:shadow-[var(--boxShadow-light-mode)] dark:boder-white dark:hover:shadow-white dark:hover:bg-[var(--darkHover)]/50 dark:hover:shadow-[var(--boxShadow-dark-mode)]"
+                className="border-[0.5px]  overflow-y-hidden border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[var(--lightHover)] hover:-translate-y-1 duration-500 hover:shadow-[var(--boxShadow-light-mode)] dark:boder-white dark:hover:shadow-white dark:hover:bg-[var(--darkHover)]/50 dark:hover:shadow-[var(--boxShadow-dark-mode)]"
                 variants={fadeInUp}
               >
                 <Image
                   src={isDarkMode ? iconDark : icon}
                   alt={title}
-                  className="w-7 mt-3"
+                  className=" overflow-y-hidden w-7 mt-3"
                 />
-                <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
+                <h3 className=" overflow-y-hidden my-4 font-semibold text-gray-700 dark:text-white">
                   {title}
                 </h3>
-                <p className="text-gray-700 text-sm dark:text-white/80">
+                <p className=" overflow-y-hidden text-gray-700 text-sm dark:text-white/80">
                   {description}
                 </p>
               </motion.li>
@@ -97,13 +100,13 @@ const About = ({ isDarkMode }) => {
             Tools I use
           </motion.h4>
           <motion.ul
-            className="flex items-center gap-3 sm:gap-5"
+            className="flex items-center gap-3 sm:gap-5  overflow-y-hidden"
             variants={staggerContainer}
           >
             {toolsData.map((tool, ind) => (
               <motion.li
                 key={ind}
-                className="flex rounded-lg items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 cursor-pointer hover:-translate-y-1 duration-500"
+                className=" overflow-y-hidden flex rounded-lg items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 cursor-pointer hover:-translate-y-1 duration-500"
                 variants={fadeInUp}
               >
                 <Image src={tool} alt="Tool" className="w-5 sm:w-7" />
