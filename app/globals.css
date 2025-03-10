@@ -11,10 +11,6 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-div {
-  /* box-sizing: border-box; */
-  overflow-x:hidden;
-}
 
 .font-outfit {
   font-family: var(--font-outfit), sans-serif;
@@ -26,4 +22,10 @@ div {
   gap: 1.5rem; /* Equivalent to Tailwind's gap-6 */
   margin-top: 2.5rem; /* Equivalent to Tailwind's my-10 */
   margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  div {
+    overflow: hidden;
+  }
 }

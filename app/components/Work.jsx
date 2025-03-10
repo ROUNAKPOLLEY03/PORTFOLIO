@@ -34,7 +34,7 @@ const Work = () => {
       >
         My Portfolio
       </motion.h4>
-      <motion.h2 className=" overflow-y-hidden text-center text-5xl font-ovo" variants={fadeInUp}>
+      <motion.h2 className="text-center text-5xl font-ovo" variants={fadeInUp}>
         My Latest Work
       </motion.h2>
       <motion.p
@@ -47,13 +47,13 @@ const Work = () => {
 
       {/* Project Cards */}
       <motion.div
-        className=" overflow-y-hidden grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] my-10 gap-6 dark:text-black"
+        className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] my-10 gap-6 dark:text-black"
         variants={staggerContainer}
       >
         {workData.map((project, index) => (
           <motion.div
             key={index}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden"
+            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
             style={{ backgroundImage: `url(${project.bgImage})` }}
             variants={fadeInUp}
             whileHover={{ scale: 1.05, rotate: 2 }} // Hover zoom & slight tilt

@@ -32,10 +32,7 @@ const About = ({ isDarkMode }) => {
       >
         Introduction
       </motion.h4>
-      <motion.h2
-        className="text-center text-5xl font-ovo  overflow-y-hidden"
-        variants={fadeInUp}
-      >
+      <motion.h2 className="text-center text-5xl font-ovo" variants={fadeInUp}>
         About Me
       </motion.h2>
 
@@ -57,7 +54,10 @@ const About = ({ isDarkMode }) => {
 
         {/* About Info */}
         <motion.div className="flex-1" variants={staggerContainer}>
-          <motion.p className="mb-10 max-w-2xl font-ovo" variants={fadeInUp}>
+          <motion.p
+            className=" mb-10 max-w-2xl font-ovo"
+            variants={fadeInUp}
+          >
             I am a passionate Full Stack Web Developer currently pursuing my
             studies in college. Throughout my learning journey, I have gained
             hands-on experience in building dynamic and responsive web
@@ -68,7 +68,7 @@ const About = ({ isDarkMode }) => {
 
           {/* Info Cards */}
           <motion.ul
-            className=" overflow-y-hidden grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl"
             variants={staggerContainer}
           >
             {infoList.map(({ icon, iconDark, title, description }, index) => (
@@ -80,12 +80,12 @@ const About = ({ isDarkMode }) => {
                 <Image
                   src={isDarkMode ? iconDark : icon}
                   alt={title}
-                  className=" overflow-y-hidden w-7 mt-3"
+                  className=" w-7 mt-3"
                 />
-                <h3 className=" overflow-y-hidden my-4 font-semibold text-gray-700 dark:text-white">
+                <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
                   {title}
                 </h3>
-                <p className=" overflow-y-hidden text-gray-700 text-sm dark:text-white/80">
+                <p className=" text-gray-700 text-sm dark:text-white/80">
                   {description}
                 </p>
               </motion.li>
@@ -100,13 +100,13 @@ const About = ({ isDarkMode }) => {
             Tools I use
           </motion.h4>
           <motion.ul
-            className="flex items-center gap-3 sm:gap-5  overflow-y-hidden"
+            className="flex items-center gap-3 sm:gap-5 n"
             variants={staggerContainer}
           >
             {toolsData.map((tool, ind) => (
               <motion.li
                 key={ind}
-                className=" overflow-y-hidden flex rounded-lg items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 cursor-pointer hover:-translate-y-1 duration-500"
+                className=" flex rounded-lg items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 cursor-pointer hover:-translate-y-1 duration-500"
                 variants={fadeInUp}
               >
                 <Image src={tool} alt="Tool" className="w-5 sm:w-7" />

@@ -44,7 +44,7 @@ const Education = () => {
         Where I have studied
       </motion.h4>
       <motion.h2
-        className="text-center text-5xl font-ovo  overflow-y-hidden"
+        className="text-center text-5xl font-ovo "
         variants={fadeInUp}
       >
         My Education
@@ -62,14 +62,14 @@ const Education = () => {
 
       {/* Education Cards */}
       <motion.div
-        className="overflow-y-hidden grid gap-6 my-10"
+        className="grid gap-6 my-10"
         style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}
         variants={staggerContainer}
       >
         {educationData.map(({ icon, title, description, link }, ind) => (
           <motion.div
             key={ind}
-            className=" overflow-y-hidden border border-gray-400 rounded-lg px-8 py-12 cursor-pointer relative overflow-hidden
+            className="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer relative overflow-hidden
                        hover:shadow-[var(--boxShadow-light-mode)] hover:-translate-y-1 transition-all duration-500
                        dark:hover:bg-[var(--darkHover)] dark:hover:shadow-[var(--boxShadow-dark-mode)]"
             variants={rotateFadeIn}
